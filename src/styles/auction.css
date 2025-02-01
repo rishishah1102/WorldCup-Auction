@@ -1,0 +1,11 @@
+.auctionPage {
+  /* background: url("../images/202.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.auctionboard {
+  background: url("../images/auctionboard.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

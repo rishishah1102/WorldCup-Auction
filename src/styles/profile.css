@@ -1,0 +1,7 @@
+.profilePic {
+    width: 125px!important;
+    height: 125px!important;
+    border-radius: 100px!important;
+    border: none!important;
+    content-visibility: hidden;
+}
