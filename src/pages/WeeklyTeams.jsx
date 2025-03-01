@@ -89,7 +89,6 @@ function WeeklyTeams() {
         player.playerData.playerType === "Bowler" && bowlers++;
         player.playerData.playerType === "Wicket-Keeper" && wk++;
         player.playerData.playerType === "All-Rounder" && all++;
-        player.playerData.country !== "India" && overseas++;
         xi.push(player.playerData.matchData._id);
         return null;
       } else {
