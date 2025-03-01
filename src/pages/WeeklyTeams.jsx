@@ -70,7 +70,6 @@ function WeeklyTeams() {
     let batters = 0;
     let bowlers = 0;
     let wk = 0;
-    let overseas = 0;
     let all = 0;
     players.map((player) => {
       if (
@@ -99,7 +98,7 @@ function WeeklyTeams() {
       }
     });
 
-    if (wk >= 1 && batters >= 2 && bowlers >= 3 && overseas <= 4 && all >= 1) {
+    if (wk >= 1 && batters >= 2 && bowlers >= 3 && all >= 1) {
       try {
         const res = await instance.post(
           "/submission",
