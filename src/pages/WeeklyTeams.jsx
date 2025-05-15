@@ -70,7 +70,6 @@ function WeeklyTeams() {
     let batters = 0;
     let bowlers = 0;
     let wk = 0;
-    let overseas = 0;
     let all = 0;
     players.map((player) => {
       if (
@@ -90,7 +89,6 @@ function WeeklyTeams() {
         player.playerData.playerType === "Bowler" && bowlers++;
         player.playerData.playerType === "Wicket-Keeper" && wk++;
         player.playerData.playerType === "All-Rounder" && all++;
-        player.playerData.country !== "India" && overseas++;
         xi.push(player.playerData.matchData._id);
         return null;
       } else {
@@ -99,7 +97,7 @@ function WeeklyTeams() {
       }
     });
 
-    if (wk >= 1 && batters >= 2 && bowlers >= 3 && overseas <= 4 && all >= 1) {
+    if (wk >= 1 && batters >= 2 && bowlers >= 3 && all >= 1) {
       try {
         const res = await instance.post(
           "/submission",
