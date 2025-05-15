@@ -37,8 +37,8 @@ function WeeklyTeams() {
     if (
       !(currentDay === 6 && currentHour >= 0 && currentHour <= 23) &&
       !(currentDay === 0 && currentHour >= 0 && currentHour <= 23) &&
-      !(now.getDate() === 20 && now.getMonth() === 2 && currentHour >= 0 && currentHour <= 23) &&
-      !(now.getDate() === 21 && now.getMonth() === 2 && currentHour >= 0 && currentHour <= 23)
+      !(now.getDate() === 15 && now.getMonth() === 4 && currentHour >= 0 && currentHour <= 23) &&
+      !(now.getDate() === 16 && now.getMonth() === 4 && currentHour >= 0 && currentHour <= 23)
     ) {
       toast.error(
         "This route is accessible only on Saturday and Sunday"
